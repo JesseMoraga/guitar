@@ -37,8 +37,8 @@
 </script>
 <style>
   :root{
-    --black:#0A0A0B; --panel:#121214; --panel2:#0e0e10; --gray:#8A8A92;
-    --gray-d:#5a5a61; --line:#26262b; --gold:#C8A24A; --gold-soft:#d8b86a;
+    --black:#0A0A0B; --panel:#121214; --panel2:#0e0e10; --gray:#9ca2ab;
+    --gray-d:#8a8a93; --line:#26262b; --gold:#C8A24A; --gold-soft:#d8b86a;
     --maxw:1120px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -183,7 +183,8 @@
   .capture form{display:flex; gap:10px; max-width:480px; margin:30px auto 0; flex-wrap:wrap; justify-content:center}
   .capture input{flex:1; min-width:240px; padding:15px 18px; border-radius:999px; border:1px solid #0A0A0B;
     background:#0A0A0B; color:#fff; font-size:15px; font-family:inherit}
-  .capture input::placeholder{color:#777}
+  .capture input::placeholder{color:#9a9aa0}
+  a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
   .capture .btn{background:#0A0A0B; color:var(--gold); padding:15px 28px}
   .capture .btn:hover{background:#1a1a1d; transform:translateY(-2px)}
   .capture .micro{margin-top:14px; font-size:12px; color:#3a3120}
@@ -238,7 +239,7 @@
         <a href="#fr3tlab">Fr3tLab</a>
         <a href="#proof">Proof</a>
       </div>
-      <a class="btn btn-gold nav-cta" data-cta="newsletter" href="#start">Start free</a>
+      <a class="btn btn-gold nav-cta" href="#start">Start free</a>
     </div>
   </div>
 </nav>
@@ -250,8 +251,8 @@
     <h1 class="display">Play in <span class="gold">any key.</span> Finally understand the guitar.</h1>
     <p class="lede">I wasted 20 years guessing. Then the guitar gods handed me one piece of the puzzle — and I taught myself to play in every key, solo, build progressions, and back up any song. I'll hand you that foundation on day one.</p>
     <div class="cta-row">
-      <a class="btn btn-gold" data-cta="newsletter" href="#start">Start free</a>
-      <a class="btn btn-ghost" data-cta="youtube" href="#">Watch me teach →</a>
+      <a class="btn btn-gold" href="#start">Start free</a>
+      <a class="btn btn-ghost" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA">Watch me teach →</a>
     </div>
   </div>
   <div class="marquee" aria-hidden="true">
@@ -302,7 +303,7 @@
         <h2 class="display">The Foundation. $50. Yours for life.</h2>
         <p class="body">Everything I wish someone had handed me, in the exact order it should be learned. No filler. Watch it as many times as you want — you own it forever.</p>
         <div class="price">$50<small>one payment</small></div>
-        <a class="btn btn-gold" data-cta="course" href="#">Get the Course — $50</a>
+        <a class="btn btn-gold" data-cta="course" href="https://buy.stripe.com/test_4gM4gy0BBcome2j7JKeUU00">Get the Course — $50</a>
         <p class="reassure">One payment. No subscription. Keep it forever.</p>
         <div class="badges">
           <span>6 video modules</span><span>Downloadable practice sheets</span><span>Lifetime access</span><span>Any style, any tuning</span>
@@ -329,7 +330,7 @@
         <h2 class="display">Want me in your corner? Let's work.</h2>
         <p class="body">Live video lessons built around exactly where you're stuck and where you want to go. I teach players at every level, on a schedule that works for you, anywhere, any time zone.</p>
         <p class="detail">$60–80 / session · online · all levels · serious players only</p>
-        <a class="btn btn-gold" data-cta="book" href="#">Book a Lesson</a>
+        <a class="btn btn-gold" data-cta="book" href="mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com">Book a Lesson</a>
         <p class="micro">First-timer? Grab a free 15-minute consult and we'll map your plan.</p>
       </div>
       <div class="photo">[ Photo · Jesse teaching ]</div>
@@ -344,7 +345,7 @@
       <span class="eyebrow">Free, no signup</span>
       <h2 class="display">See it for yourself — Fr3tLab.</h2>
       <p class="body">I built a free fretboard visualizer so you can see what I see. Pick a key, watch the map come to life, and you'll get exactly how I think about the guitar.</p>
-      <div class="frame"><iframe src="https://fr3tlab.com" title="Fr3tLab — free fretboard visualizer" loading="lazy"></iframe></div>
+      <div class="frame"><iframe src="https://fr3tlab.com" title="Fr3tLab — free fretboard visualizer" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe></div>
       <a class="btn btn-ghost" href="https://fr3tlab.com" target="_blank" rel="noopener">Try Fr3tLab free →</a>
     </div>
   </div>
@@ -357,9 +358,9 @@
     <h2 class="display sec-head reveal" style="margin-top:14px">Watch first. Then decide.</h2>
     <p class="sub reveal">Free lessons, breakdowns, and the foundation in action — straight from my channel.</p>
     <div class="videos reveal" id="videos">
-      <a class="vid" data-cta="youtube" href="#"><span class="play"></span></a>
-      <a class="vid" data-cta="youtube" href="#"><span class="play"></span></a>
-      <a class="vid" data-cta="youtube" href="#"><span class="play"></span></a>
+      <a class="vid" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA" aria-label="Watch lessons on YouTube"><span class="play"></span></a>
+      <a class="vid" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA" aria-label="Watch lessons on YouTube"><span class="play"></span></a>
+      <a class="vid" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA" aria-label="Watch lessons on YouTube"><span class="play"></span></a>
     </div>
     <div class="testis reveal">
       <div class="testi"><p>"Finally get what I'm doing instead of memorizing."</p><div class="who">— Student name</div></div>
@@ -388,8 +389,8 @@
   <div class="wrap reveal">
     <h2 class="display">Don't wait 20 years.<br/><span class="gold">Start today.</span></h2>
     <div class="cta-row" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px">
-      <a class="btn btn-gold" data-cta="course" href="#">Get the Course — $50</a>
-      <a class="btn btn-ghost" data-cta="book" href="#">Book a Lesson</a>
+      <a class="btn btn-gold" data-cta="course" href="https://buy.stripe.com/test_4gM4gy0BBcome2j7JKeUU00">Get the Course — $50</a>
+      <a class="btn btn-ghost" data-cta="book" href="mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com">Book a Lesson</a>
     </div>
   </div>
 </section>
@@ -401,14 +402,14 @@
       <a class="brand" href="#top"><span class="dot"></span>Jesse Moraga · Guitar</a>
       <div class="flinks">
         <a href="#course">The Course</a>
-        <a data-cta="book" href="#">Book a Lesson</a>
+        <a data-cta="book" href="mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com">Book a Lesson</a>
         <a href="https://fr3tlab.com" target="_blank" rel="noopener">Fr3tLab</a>
-        <a data-cta="youtube" href="#">YouTube</a>
+        <a data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA">YouTube</a>
       </div>
     </div>
     <div class="socials" style="margin-top:24px">
-      <a data-cta="youtube" href="#">YouTube</a>
-      <a data-cta="tiktok" href="#">TikTok</a>
+      <a data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA">YouTube</a>
+      <a data-cta="tiktok" href="https://www.tiktok.com/@jessemoragaguitar">TikTok</a>
       <a href="https://www.instagram.com/jessemusicusa" target="_blank" rel="noopener">Instagram</a>
       <a href="mailto:lessons@jessemoraga.com">lessons@jessemoraga.com</a>
     </div>
@@ -438,7 +439,7 @@
     const key = el.getAttribute('data-cta');
     if(LINKS[key]){
       el.setAttribute('href', LINKS[key]);
-      if(key!=='newsletter') el.setAttribute('target','_blank'), el.setAttribute('rel','noopener');
+      if(key!=='book'){ el.setAttribute('target','_blank'); el.setAttribute('rel','noopener'); }
     }
   });
 
