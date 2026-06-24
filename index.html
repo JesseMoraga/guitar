@@ -167,7 +167,12 @@
   .proof .sub{color:var(--gray); margin-bottom:40px}
   .videos{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:42px}
   .vid{aspect-ratio:16/9; border:1px solid var(--line); border-radius:12px;
-    background:linear-gradient(135deg,#141416,#0c0c0e); display:flex; align-items:center; justify-content:center; position:relative}
+    background:linear-gradient(135deg,#141416,#0c0c0e); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden}
+  .vid iframe{width:100%; height:100%; border:0; display:block}
+  .photo img{width:100%; height:100%; object-fit:cover; display:block}
+  .photo .pcard{padding:34px; text-align:left; display:flex; flex-direction:column; gap:12px; align-items:flex-start; justify-content:center; height:100%}
+  .photo .pcard strong{font-family:'Archivo',sans-serif; font-weight:800; font-size:1.5rem; color:#f3f3f4}
+  .photo .pcard span.s{color:var(--gray); font-size:.98rem; line-height:1.55}
   .vid .play{width:54px; height:54px; border-radius:50%; border:1px solid var(--gold);
     display:flex; align-items:center; justify-content:center; color:var(--gold)}
   .vid .play::after{content:""; border-left:13px solid var(--gold); border-top:8px solid transparent; border-bottom:8px solid transparent; margin-left:4px}
@@ -249,10 +254,10 @@
   <div class="wrap">
     <span class="eyebrow">Online Guitar Lessons · Free Foundation Guide</span>
     <h1 class="display">Play in <span class="gold">any key.</span> Finally understand the guitar.</h1>
-    <p class="lede">I wasted 20 years guessing. Then the guitar gods handed me one piece of the puzzle — and I taught myself to play in every key, solo, build progressions, and back up any song. Let me hand you that foundation, one-on-one.</p>
+    <p class="lede">I wasted 20 years guessing. Then one idea clicked — how the whole fretboard is wired — and it all made sense. I taught myself to play in every key, solo, build progressions, and back up any song. Let me hand you that same foundation.</p>
     <div class="cta-row">
-      <a class="btn btn-gold" data-cta="book" href="https://calendly.com/lessons-jessemoraga/30min">Book a lesson</a>
-      <a class="btn btn-ghost" href="#start">Get the free guide</a>
+      <a class="btn btn-gold" href="#start">Get the free guide</a>
+      <a class="btn btn-ghost" data-cta="book" href="https://calendly.com/lessons-jessemoraga/30min">Book a lesson</a>
     </div>
   </div>
   <div class="marquee" aria-hidden="true">
@@ -268,7 +273,7 @@
   <div class="wrap">
     <div class="grid reveal">
       <div>
-        <span class="eyebrow">02 / Why you're stuck</span>
+        <span class="eyebrow">Why you're stuck</span>
         <h2 class="display" style="margin-top:18px">It's not talent. Nobody gave you the foundation.</h2>
       </div>
       <div>
@@ -282,7 +287,7 @@
 <!-- FOUNDATION -->
 <section class="sec foundation">
   <div class="wrap">
-    <span class="eyebrow reveal">03 / What you'll actually learn</span>
+    <span class="eyebrow reveal">What you'll learn</span>
     <h2 class="display sec-head reveal" style="margin-top:14px">The foundation, in order.</h2>
     <div class="reveal">
       <div class="pillar"><div class="num">01</div><div><h3>The Fretboard Map</h3><p>Stop seeing random dots. See the whole neck as one connected map you actually understand.</p></div></div>
@@ -300,7 +305,7 @@
     <div class="grid reveal">
       <div>
         <span class="eyebrow">Work with me</span>
-        <h2 class="display">Private lessons. This is how you actually get good.</h2>
+        <h2 class="display">Private lessons. The fastest way to stop guessing.</h2>
         <p class="body">Live one-on-one video lessons built around exactly where you're stuck and where you want to go. No generic curriculum — I meet you where you are and build your foundation in real time. Every level, any time zone.</p>
         <div class="price">$60–80<small>per session</small></div>
         <a class="btn btn-gold" data-cta="book" href="https://calendly.com/lessons-jessemoraga/30min">Book a lesson</a>
@@ -309,7 +314,7 @@
           <span>1-on-1 video</span><span>All levels</span><span>Any time zone</span><span>Built around you</span>
         </div>
       </div>
-      <div class="photo">[ Photo · Jesse playing ]</div>
+      <div class="photo"><div class="pcard"><span class="eyebrow">Your teacher</span><strong>Jesse Moraga</strong><span class="s">Playing in metal bands since the early 2010s. I learned the theory the hard way, then found the shortcut — and that's exactly what I teach you, one-on-one.</span></div></div>
     </div>
   </div>
 </section>
@@ -326,7 +331,7 @@
         <a class="btn btn-gold" href="#start">Get the free guide</a>
         <p class="micro">No spam — just the foundation, and a heads-up when the full course drops.</p>
       </div>
-      <div class="photo">[ Fr3tLab · C major ]</div>
+      <div class="photo"><img src="fretlab-preview.png" alt="Fr3tLab — the free fretboard tool showing C major" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -338,7 +343,7 @@
       <span class="eyebrow">Free, no signup</span>
       <h2 class="display">See it for yourself — Fr3tLab.</h2>
       <p class="body">I built a free fretboard visualizer so you can see what I see. Pick a key, watch the map come to life, and you'll get exactly how I think about the guitar.</p>
-      <div class="frame"><iframe src="https://fr3tlab.com" title="Fr3tLab — free fretboard visualizer" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms"></iframe></div>
+      <div class="frame"><iframe src="https://fr3tlab.com" title="Fr3tLab — free fretboard visualizer" sandbox="allow-scripts allow-same-origin allow-forms"></iframe></div>
       <a class="btn btn-ghost" href="https://fr3tlab.com" target="_blank" rel="noopener">Try Fr3tLab free →</a>
     </div>
   </div>
@@ -347,17 +352,16 @@
 <!-- PROOF -->
 <section class="sec proof" id="proof">
   <div class="wrap">
-    <span class="eyebrow reveal">07 / Watch me play</span>
+    <span class="eyebrow reveal">Watch me play</span>
     <h2 class="display sec-head reveal" style="margin-top:14px">Watch me play. Then let's talk.</h2>
-    <p class="sub reveal">See what the foundation actually sounds like — straight from my channel.</p>
+    <p class="sub reveal">Here's the foundation in action — straight from my channel.</p>
     <div class="videos reveal" id="videos">
-      <a class="vid" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA" aria-label="Watch me play on YouTube"><span class="play"></span></a>
-      <a class="vid" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA" aria-label="Watch me play on YouTube"><span class="play"></span></a>
-      <a class="vid" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA" aria-label="Watch me play on YouTube"><span class="play"></span></a>
+      <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/gtotn0hIdjU" title="Jesse Moraga — guitar" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/Cj6GfQRJvHw" title="Jesse Moraga — guitar" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/0e5T8rdGpzs" title="Jesse Moraga — guitar" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </div>
-    <div class="testis reveal">
-      <div class="testi"><p>"Finally get what I'm doing instead of memorizing."</p><div class="who">— Student name</div></div>
-      <div class="testi"><p>"Six months of lessons taught me less than one month with Jesse."</p><div class="who">— Student name</div></div>
+    <div class="reveal" style="text-align:center;margin-top:30px">
+      <a class="btn btn-ghost" data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA">See more on YouTube →</a>
     </div>
   </div>
 </section>
@@ -435,7 +439,7 @@
   if(cf){ cf.addEventListener('submit', function(e){
     e.preventDefault();
     const em = encodeURIComponent(document.getElementById('cheatEmail').value || '');
-    window.location.href = "mailto:lessons@jessemoraga.com?subject=Send%20me%20the%20Any-Key%20cheat%20sheet&body=My%20email%3A%20"+em;
+    window.location.href = "mailto:lessons@jessemoraga.com?subject=Send%20me%20the%20free%20Foundation%20guide&body=My%20email%3A%20"+em;
   }); }
 
   /* scroll reveals */
