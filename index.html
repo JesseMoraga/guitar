@@ -452,7 +452,7 @@
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: body.toString()
     }).then(function(){
-      cf.innerHTML = "<p style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:1.3rem;color:#0A0A0B;margin-bottom:16px\">You're in. Here's your guide 🤘</p><a class=\"btn\" href=\"/foundation-guide.pdf\" download style=\"background:#0A0A0B;color:#C8A24A;padding:15px 30px;font-weight:600;border-radius:999px;text-decoration:none;display:inline-block\">Download the Foundation guide →</a><p style=\"color:#3a3120;font-size:12px;margin-top:12px\">Also saved to your email so you've always got it.</p>";
+      cf.innerHTML = "<p style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:1.3rem;color:#0A0A0B;margin-bottom:16px\">You're in. Here's your guide 🤘</p><a class=\"btn\" href=\"/foundation-guide.pdf\" download=\"Guitar-Foundation-Jesse-Moraga.pdf\" style=\"background:#0A0A0B;color:#C8A24A;padding:15px 30px;font-weight:600;border-radius:999px;text-decoration:none;display:inline-block\">Download the Foundation guide →</a><p style=\"color:#3a3120;font-size:12px;margin-top:12px\">Also saved to your email so you've always got it.</p>";
     }).catch(function(){
       btn.disabled = false; btn.textContent = 'Send it to me';
       window.location.href = "mailto:lessons@jessemoraga.com?subject=Send%20me%20the%20free%20Foundation%20guide&body=My%20email%3A%20" + encodeURIComponent(email);
