@@ -175,6 +175,15 @@
     display:flex; flex-direction:column; gap:4px}
   .photo .photo-cap strong{font-family:'Archivo',sans-serif; font-weight:800; font-size:1.4rem; color:#fff}
   .photo .photo-cap .s{color:#c9ccd2; font-size:.92rem}
+
+  /* MY STORY */
+  .story{background:var(--panel2); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .story .grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:54px; align-items:center}
+  .story h2{font-size:clamp(1.8rem,4.4vw,2.8rem); margin:14px 0 18px; max-width:18ch}
+  .story .photo{aspect-ratio:4/5}
+  .story p.body{color:var(--gray); margin-top:14px}
+  .story p.body:first-of-type{margin-top:0}
+  .story .kicker{font-family:'Archivo',sans-serif; font-weight:700; color:#fff}
   .vid .play{width:54px; height:54px; border-radius:50%; border:1px solid var(--gold);
     display:flex; align-items:center; justify-content:center; color:var(--gold)}
   .vid .play::after{content:""; border-left:13px solid var(--gold); border-top:8px solid transparent; border-bottom:8px solid transparent; margin-left:4px}
@@ -217,13 +226,14 @@
   .menu-toggle{display:none}
   @media(max-width:860px){
     .navlinks .menu{display:none}
-    .problem .grid,.course .grid,.lessons .grid{grid-template-columns:1fr; gap:34px}
+    .problem .grid,.course .grid,.lessons .grid,.story .grid{grid-template-columns:1fr; gap:34px}
+    .story .photo{aspect-ratio:4/3}
     .videos{grid-template-columns:1fr}
     .testis{grid-template-columns:1fr}
     .sec{padding:72px 0}
     .hero{padding:72px 0 0}
     .hero h1{font-size:clamp(1.7rem,7vw,3rem) !important; max-width:100% !important}
-    .problem h2,.course h2,.lessons h2,.tool h2,.sec-head{font-size:clamp(1.6rem,6.4vw,2.4rem) !important; max-width:100% !important}
+    .problem h2,.course h2,.lessons h2,.tool h2,.story h2,.sec-head{font-size:clamp(1.6rem,6.4vw,2.4rem) !important; max-width:100% !important}
     h1,h2,h3{overflow-wrap:anywhere}
     .closing{padding:90px 0}
     .closing h2{font-size:clamp(2.1rem,9vw,3.2rem)}
@@ -297,6 +307,23 @@
       <div class="pillar"><div class="num">03</div><div><h3>Build &amp; Choose Progressions</h3><p>Know which chords belong together and why, so you can write and follow progressions without guessing.</p></div></div>
       <div class="pillar"><div class="num">04</div><div><h3>Rhythm &amp; Backup</h3><p>Become the player every band wants — lock in, hold it down, and make any song sound full.</p></div></div>
       <div class="pillar"><div class="num">05</div><div><h3>Soloing</h3><p>Find the right notes anywhere on the neck and actually say something with them, in any key.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MY STORY -->
+<section class="sec story" id="story">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div class="photo"><img src="jesse-playing-blue.jpg" alt="Jesse Moraga playing guitar live" /></div>
+      <div>
+        <span class="eyebrow">My story</span>
+        <h2 class="display">20 years, one Metallica album, and a love-hate thing with the guitar.</h2>
+        <p class="body">I've been playing more than 20 years. It started with Metallica — the first album I ever owned was <span class="kicker">St. Anger</span>. Funny enough, it's the one record they tracked in Drop C, and I had the DVD, so I got to watch a full band actually build it in the studio. That lit the fuse.</p>
+        <p class="body">I played all through high school, mostly self-taught — took a few lessons, even dabbled in classical for years. But I'll be straight with you: me and the guitar had a love-hate thing for a long time. Bands in high school, bands at 20, bands at 30 — and still, something never fully clicked.</p>
+        <p class="body">What changed everything was learning to actually <span class="kicker">speak the language of music</span> on the instrument — not memorizing shapes, but understanding how it all walks and talks. The second that clicked, guitar went from frustrating to the most fun thing I do.</p>
+        <p class="body">I kept showing people the way I think about it, and kept hearing the same thing: <span class="kicker">"man, you just made it click for me."</span> Enough times, and I figured I should put it out there. This is the exact process that finally made it make sense — and the best part? You barely have to memorize a thing. Once you've got the formula, you put on your favorite song and just start jamming. Reaching that point is amazing — that's where I want to get you.</p>
+      </div>
     </div>
   </div>
 </section>
