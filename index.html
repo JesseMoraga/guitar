@@ -374,8 +374,8 @@
     <div class="reveal">
       <h2 class="display">Get the free any-key cheat sheet.</h2>
       <p>The one-page foundation I wish I'd had, plus a short walkthrough on how to practice it. Drop your email, I'll send it now.</p>
-      <form data-cta="newsletter-form" onsubmit="return false;">
-        <input type="email" placeholder="your@email.com" aria-label="Your email" required />
+      <form id="cheatForm">
+        <input type="email" id="cheatEmail" placeholder="your@email.com" aria-label="Your email" required />
         <button class="btn" type="submit">Send it to me</button>
       </form>
       <p class="micro">No spam. Just the good stuff.</p>
@@ -428,10 +428,10 @@
      Newsletter form = replace with the MailerLite embed form when ready.
   ====================================================================== */
   const LINKS = {
-    course:  "",   // TODO: Stripe Payment Link
-    book:    "",   // TODO: Calendly link
-    youtube: "",   // TODO: YouTube channel URL
-    tiktok:  "",   // TODO: TikTok profile URL
+    course:  "https://buy.stripe.com/test_4gM4gy0BBcome2j7JKeUU00",   // Stripe TEST link — swap to live buy.stripe.com link at launch
+    book:    "mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com",  // until Calendly is live
+    youtube: "https://www.youtube.com/@JesseMusicUSA",
+    tiktok:  "https://www.tiktok.com/@jessemusicusa",   // matches his handle pattern — confirm if different
   };
   // Apply any links that are filled in; leave '#' (no-op) until provided.
   document.querySelectorAll('[data-cta]').forEach(el=>{
@@ -441,6 +441,14 @@
       if(key!=='newsletter') el.setAttribute('target','_blank'), el.setAttribute('rel','noopener');
     }
   });
+
+  /* email cheat-sheet form — mailto fallback until MailerLite is wired */
+  const cf = document.getElementById('cheatForm');
+  if(cf){ cf.addEventListener('submit', function(e){
+    e.preventDefault();
+    const em = encodeURIComponent(document.getElementById('cheatEmail').value || '');
+    window.location.href = "mailto:lessons@jessemoraga.com?subject=Send%20me%20the%20Any-Key%20cheat%20sheet&body=My%20email%3A%20"+em;
+  }); }
 
   /* scroll reveals */
   const io = new IntersectionObserver((ents)=>{
