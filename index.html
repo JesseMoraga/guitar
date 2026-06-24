@@ -330,7 +330,7 @@
         <h2 class="display">Want me in your corner? Let's work.</h2>
         <p class="body">Live video lessons built around exactly where you're stuck and where you want to go. I teach players at every level, on a schedule that works for you, anywhere, any time zone.</p>
         <p class="detail">$60–80 / session · online · all levels · serious players only</p>
-        <a class="btn btn-gold" data-cta="book" href="mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com">Book a Lesson</a>
+        <a class="btn btn-gold" data-cta="book" href="https://calendly.com/lessons-jessemoraga/30min">Book a Lesson</a>
         <p class="micro">First-timer? Grab a free 15-minute consult and we'll map your plan.</p>
       </div>
       <div class="photo">[ Photo · Jesse teaching ]</div>
@@ -390,7 +390,7 @@
     <h2 class="display">Don't wait 20 years.<br/><span class="gold">Start today.</span></h2>
     <div class="cta-row" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px">
       <a class="btn btn-gold" data-cta="course" href="https://buy.stripe.com/test_4gM4gy0BBcome2j7JKeUU00">Get the Course — $50</a>
-      <a class="btn btn-ghost" data-cta="book" href="mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com">Book a Lesson</a>
+      <a class="btn btn-ghost" data-cta="book" href="https://calendly.com/lessons-jessemoraga/30min">Book a Lesson</a>
     </div>
   </div>
 </section>
@@ -402,7 +402,7 @@
       <a class="brand" href="#top"><span class="dot"></span>Jesse Moraga · Guitar</a>
       <div class="flinks">
         <a href="#course">The Course</a>
-        <a data-cta="book" href="mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com">Book a Lesson</a>
+        <a data-cta="book" href="https://calendly.com/lessons-jessemoraga/30min">Book a Lesson</a>
         <a href="https://fr3tlab.com" target="_blank" rel="noopener">Fr3tLab</a>
         <a data-cta="youtube" href="https://www.youtube.com/@JesseMusicUSA">YouTube</a>
       </div>
@@ -430,7 +430,7 @@
   ====================================================================== */
   const LINKS = {
     course:  "https://buy.stripe.com/test_4gM4gy0BBcome2j7JKeUU00",   // Stripe TEST link — swap to live buy.stripe.com link at launch
-    book:    "mailto:lessons@jessemoraga.com?subject=Lesson%20booking%20%E2%80%94%20jessemoragaguitar.com",  // until Calendly is live
+    book:    "https://calendly.com/lessons-jessemoraga/30min",
     youtube: "https://www.youtube.com/@JesseMusicUSA",
     tiktok:  "https://www.tiktok.com/@jessemoragaguitar",
   };
@@ -439,7 +439,7 @@
     const key = el.getAttribute('data-cta');
     if(LINKS[key]){
       el.setAttribute('href', LINKS[key]);
-      if(key!=='book'){ el.setAttribute('target','_blank'); el.setAttribute('rel','noopener'); }
+      el.setAttribute('target','_blank'); el.setAttribute('rel','noopener');
     }
   });
 
