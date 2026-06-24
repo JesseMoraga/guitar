@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jesse Moraga — Guitar | Play in any key. Finally understand the guitar.</title>
+<meta name="description" content="Learn to play in any key, build progressions, solo, and finally understand the fretboard. The $50 Foundation course + private online lessons worldwide with Jesse Moraga." />
+<meta name="author" content="Jesse Moraga" />
+<link rel="canonical" href="https://jessemoragaguitar.com/" />
+<meta name="theme-color" content="#0A0A0B" />
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Jesse Moraga — Guitar" />
+<meta property="og:description" content="Play in any key. Finally understand the guitar. The $50 Foundation course + private online lessons worldwide." />
+<meta property="og:url" content="https://jessemoragaguitar.com/" />
+<meta property="og:image" content="https://jessemoragaguitar.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Jesse Moraga — Guitar" />
+<meta name="twitter:description" content="Play in any key. Finally understand the guitar. The $50 Foundation course + private lessons worldwide." />
+<meta name="twitter:image" content="https://jessemoragaguitar.com/og-image.png" />
+<!-- Favicon (inline SVG, gold pick) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0A0B'/%3E%3Cpath d='M16 6c5 0 8 3 8 7 0 5-5 7-8 13-3-6-8-8-8-13 0-4 3-7 8-7z' fill='%23C8A24A'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<!-- SEO: structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Person","@id":"https://jessemoragaguitar.com/#jesse","name":"Jesse Moraga","jobTitle":"Guitar Instructor","url":"https://jessemoragaguitar.com/","sameAs":["https://www.instagram.com/jessemusicusa"]},
+    {"@type":"WebSite","@id":"https://jessemoragaguitar.com/#site","url":"https://jessemoragaguitar.com/","name":"Jesse Moraga — Guitar","publisher":{"@id":"https://jessemoragaguitar.com/#jesse"}},
+    {"@type":"Course","name":"The Foundation","description":"Learn to play in any key, build progressions, solo, and understand the fretboard — the foundation done right.","provider":{"@id":"https://jessemoragaguitar.com/#jesse"},"offers":{"@type":"Offer","price":"50.00","priceCurrency":"USD","category":"OneTimePurchase"}},
+    {"@type":"Service","serviceType":"Private online guitar lessons","provider":{"@id":"https://jessemoragaguitar.com/#jesse"},"areaServed":"Worldwide"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --black:#0A0A0B; --panel:#121214; --panel2:#0e0e10; --gray:#8A8A92;
+    --gray-d:#5a5a61; --line:#26262b; --gold:#C8A24A; --gold-soft:#d8b86a;
+    --maxw:1120px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--black); color:#f3f3f4;
+    font-family:'Inter',system-ui,sans-serif; line-height:1.6;
+    overflow-x:hidden; -webkit-font-smoothing:antialiased;
+  }
+  /* film grain overlay */
+  body::after{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:2; opacity:.03;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+  .eyebrow{font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); font-weight:600}
+  h1,h2,h3{font-family:'Archivo',sans-serif; letter-spacing:-.01em; line-height:1.0}
+  .display{font-weight:900; text-transform:uppercase; letter-spacing:-.015em}
+  .gold{color:var(--gold)}
+  section{position:relative; z-index:1}
+
+  /* ---------- NAV ---------- */
+  nav{position:sticky; top:0; z-index:20; background:rgba(10,10,11,.78);
+    backdrop-filter:blur(12px); border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; height:62px}
+  .brand{font-family:'Archivo',sans-serif; font-weight:800; letter-spacing:.14em;
+    text-transform:uppercase; font-size:14px; display:flex; align-items:center; gap:9px}
+  .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--gold)}
+  .navlinks{display:flex; align-items:center; gap:28px}
+  .navlinks a{font-size:13px; color:var(--gray); letter-spacing:.04em; transition:color .2s}
+  .navlinks a:hover{color:#fff}
+  .btn{display:inline-block; font-weight:600; font-size:14px; border-radius:999px;
+    padding:12px 22px; transition:all .22s ease; cursor:pointer; border:1px solid transparent; text-align:center}
+  .btn-gold{background:var(--gold); color:#0A0A0B}
+  .btn-gold:hover{background:var(--gold-soft); transform:translateY(-2px)}
+  .btn-ghost{border-color:var(--line); color:#f3f3f4; background:rgba(255,255,255,.015)}
+  .btn-ghost:hover{border-color:var(--gold); color:var(--gold); transform:translateY(-2px)}
+  .nav-cta{padding:9px 18px; font-size:13px}
+  .navlinks .menu{display:flex; align-items:center; gap:28px}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:96px 0 0; text-align:center; overflow:hidden}
+  .hero::before{content:""; position:absolute; inset:0; z-index:0;
+    background:radial-gradient(64% 46% at 50% 0%, rgba(200,162,74,.16), transparent 70%)}
+  .hero .wrap{position:relative; z-index:1}
+  .hero .eyebrow{display:block; margin-bottom:26px}
+  .hero h1{font-size:clamp(2.7rem,8.2vw,6.2rem); max-width:16ch; margin:0 auto}
+  .hero p.lede{color:var(--gray); font-size:clamp(1.02rem,2.1vw,1.22rem); max-width:46ch;
+    margin:28px auto 0; line-height:1.62}
+  .hero .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:38px}
+  .hero .cta-row .btn{padding:15px 30px; font-size:15px}
+  /* marquee */
+  .marquee{margin-top:64px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    overflow:hidden; white-space:nowrap; background:var(--panel2)}
+  .marquee .track{display:inline-block; padding:16px 0; animation:scroll 28s linear infinite}
+  .marquee span{font-family:'Archivo',sans-serif; font-weight:800; text-transform:uppercase;
+    letter-spacing:.06em; font-size:14px; color:var(--gray); padding:0 26px}
+  .marquee span .d{color:var(--gold); margin-left:52px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- generic section ---------- */
+  .sec{padding:96px 0}
+  .sec-head{font-size:clamp(1.9rem,4.6vw,3.1rem)}
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1; transform:none}
+
+  /* PROBLEM */
+  .problem .grid{display:grid; grid-template-columns:1fr 1fr; gap:54px; align-items:start}
+  .problem h2{font-size:clamp(1.8rem,4.4vw,3rem); max-width:14ch}
+  .problem .body{color:var(--gray); font-size:1.05rem}
+  .quote{margin-top:26px; font-family:'Archivo',sans-serif; font-weight:700; font-size:1.35rem;
+    color:#fff; line-height:1.3; border-left:3px solid var(--gold); padding-left:20px}
+
+  /* FOUNDATION list */
+  .foundation .sec-head{margin-bottom:46px}
+  .pillar{display:grid; grid-template-columns:72px 1fr; gap:24px; align-items:baseline;
+    padding:26px 0; border-top:1px solid var(--line); transition:padding-left .25s ease}
+  .pillar:last-child{border-bottom:1px solid var(--line)}
+  .pillar:hover{padding-left:10px}
+  .pillar .num{font-family:'Archivo',sans-serif; font-weight:800; font-size:1.6rem; color:var(--gray-d)}
+  .pillar:hover .num{color:var(--gold)}
+  .pillar h3{font-size:1.3rem; font-weight:800; text-transform:uppercase; letter-spacing:.01em; margin-bottom:7px}
+  .pillar p{color:var(--gray); max-width:54ch; font-size:1rem}
+
+  /* COURSE */
+  .course{background:var(--panel2); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .course .grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center}
+  .course h2{font-size:clamp(2rem,4.8vw,3.3rem); margin:14px 0 18px}
+  .course .body{color:var(--gray); margin-bottom:26px}
+  .price{font-family:'Archivo',sans-serif; font-weight:900; font-size:4rem; color:var(--gold); line-height:1}
+  .price small{font-family:'Inter'; font-size:1rem; color:var(--gray); font-weight:400; margin-left:10px; letter-spacing:.02em}
+  .course .btn-gold{margin-top:24px; padding:16px 32px; font-size:16px}
+  .reassure{margin-top:14px; font-size:13px; color:var(--gray-d)}
+  .modules{list-style:none; background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:10px 0}
+  .modules li{display:flex; gap:16px; padding:15px 26px; border-bottom:1px solid var(--line); font-size:.98rem; align-items:center}
+  .modules li:last-child{border-bottom:none}
+  .modules li .mn{font-family:'Archivo',sans-serif; font-weight:800; color:var(--gold); min-width:26px}
+  .modules li.plus .mn{color:var(--gray-d)}
+  .badges{display:flex; gap:10px; flex-wrap:wrap; margin-top:22px}
+  .badges span{font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--gray);
+    border:1px solid var(--line); border-radius:999px; padding:8px 14px}
+
+  /* LESSONS */
+  .lessons .grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center}
+  .lessons h2{font-size:clamp(1.9rem,4.6vw,3rem); margin:14px 0 18px; max-width:16ch}
+  .lessons .body{color:var(--gray)}
+  .lessons .detail{margin:22px 0; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold)}
+  .lessons .micro{margin-top:14px; font-size:13px; color:var(--gray-d)}
+  .photo{aspect-ratio:4/3; border:1px solid var(--line); border-radius:16px; background:
+    linear-gradient(135deg, #141416, #0c0c0e); display:flex; align-items:center; justify-content:center;
+    color:var(--gray-d); font-size:12px; letter-spacing:.16em; text-transform:uppercase; position:relative; overflow:hidden}
+  .photo::before{content:""; position:absolute; inset:0; background:radial-gradient(50% 60% at 70% 30%, rgba(200,162,74,.1), transparent 70%)}
+
+  /* FR3TLAB embed */
+  .tool{background:var(--panel2); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .tool h2{font-size:clamp(2rem,5vw,3.4rem); margin:14px 0 16px; max-width:14ch}
+  .tool .body{color:var(--gray); max-width:52ch; margin-bottom:30px}
+  .frame{border:1px solid var(--line); border-radius:16px; overflow:hidden; background:var(--black);
+    box-shadow:0 30px 80px -40px rgba(200,162,74,.25)}
+  .frame iframe{width:100%; height:560px; border:0; display:block}
+  .tool .btn-ghost{margin-top:22px; display:inline-block}
+
+  /* PROOF */
+  .proof .sec-head{margin-bottom:10px}
+  .proof .sub{color:var(--gray); margin-bottom:40px}
+  .videos{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:42px}
+  .vid{aspect-ratio:16/9; border:1px solid var(--line); border-radius:12px;
+    background:linear-gradient(135deg,#141416,#0c0c0e); display:flex; align-items:center; justify-content:center; position:relative}
+  .vid .play{width:54px; height:54px; border-radius:50%; border:1px solid var(--gold);
+    display:flex; align-items:center; justify-content:center; color:var(--gold)}
+  .vid .play::after{content:""; border-left:13px solid var(--gold); border-top:8px solid transparent; border-bottom:8px solid transparent; margin-left:4px}
+  .testis{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  .testi{border:1px solid var(--line); border-radius:14px; padding:26px; background:var(--panel)}
+  .testi p{font-size:1.12rem; font-family:'Archivo',sans-serif; font-weight:600; line-height:1.4}
+  .testi .who{margin-top:14px; color:var(--gold); font-size:13px; letter-spacing:.06em}
+
+  /* EMAIL band */
+  .capture{background:var(--gold); color:#0A0A0B; text-align:center}
+  .capture h2{font-size:clamp(1.9rem,4.8vw,3rem); color:#0A0A0B}
+  .capture p{max-width:44ch; margin:16px auto 0; color:#3a3120; font-weight:500}
+  .capture form{display:flex; gap:10px; max-width:480px; margin:30px auto 0; flex-wrap:wrap; justify-content:center}
+  .capture input{flex:1; min-width:240px; padding:15px 18px; border-radius:999px; border:1px solid #0A0A0B;
+    background:#0A0A0B; color:#fff; font-size:15px; font-family:inherit}
+  .capture input::placeholder{color:#777}
+  .capture .btn{background:#0A0A0B; color:var(--gold); padding:15px 28px}
+  .capture .btn:hover{background:#1a1a1d; transform:translateY(-2px)}
+  .capture .micro{margin-top:14px; font-size:12px; color:#3a3120}
+
+  /* CLOSING */
+  .closing{text-align:center; padding:120px 0}
+  .closing h2{font-size:clamp(2.4rem,7vw,5rem)}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line); padding:54px 0 40px; background:var(--panel2)}
+  footer .top{display:flex; justify-content:space-between; flex-wrap:wrap; gap:26px; align-items:center}
+  footer .flinks{display:flex; gap:24px; flex-wrap:wrap}
+  footer .flinks a{font-size:13px; color:var(--gray); letter-spacing:.04em; transition:color .2s}
+  footer .flinks a:hover{color:var(--gold)}
+  footer .socials{display:flex; gap:18px}
+  footer .socials a{font-size:13px; color:var(--gray)}
+  footer .socials a:hover{color:var(--gold)}
+  footer .fine{margin-top:34px; padding-top:24px; border-top:1px solid var(--line);
+    color:var(--gray-d); font-size:12px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px}
+  footer .fine a{color:var(--gold)}
+
+  /* ---------- RESPONSIVE ---------- */
+  .menu-toggle{display:none}
+  @media(max-width:860px){
+    .navlinks .menu{display:none}
+    .problem .grid,.course .grid,.lessons .grid{grid-template-columns:1fr; gap:34px}
+    .videos{grid-template-columns:1fr}
+    .testis{grid-template-columns:1fr}
+    .sec{padding:72px 0}
+    .hero{padding:72px 0 0}
+    .hero h1{font-size:clamp(1.7rem,7vw,3rem) !important; max-width:100% !important}
+    .problem h2,.course h2,.lessons h2,.tool h2,.sec-head{font-size:clamp(1.6rem,6.4vw,2.4rem) !important; max-width:100% !important}
+    h1,h2,h3{overflow-wrap:anywhere}
+    .closing{padding:90px 0}
+    .closing h2{font-size:clamp(2.1rem,9vw,3.2rem)}
+    .price{font-size:3.2rem}
+    .frame iframe{height:460px}
+    footer .top{flex-direction:column; align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot"></span>Jesse Moraga</a>
+    <div class="navlinks">
+      <div class="menu">
+        <a href="#course">The Course</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#fr3tlab">Fr3tLab</a>
+        <a href="#proof">Proof</a>
+      </div>
+      <a class="btn btn-gold nav-cta" data-cta="newsletter" href="#start">Start free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Guitar Foundation Course · Est. Self-Taught</span>
+    <h1 class="display">Play in <span class="gold">any key.</span> Finally understand the guitar.</h1>
+    <p class="lede">I wasted 20 years guessing. Then the guitar gods handed me one piece of the puzzle — and I taught myself to play in every key, solo, build progressions, and back up any song. I'll hand you that foundation on day one.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" data-cta="newsletter" href="#start">Start free</a>
+      <a class="btn btn-ghost" data-cta="youtube" href="#">Watch me teach →</a>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Play in any key<span class="d">◆</span></span><span>Understand the neck<span class="d">◆</span></span><span>Build progressions<span class="d">◆</span></span><span>Solo anywhere<span class="d">◆</span></span><span>Back up any song<span class="d">◆</span></span>
+      <span>Play in any key<span class="d">◆</span></span><span>Understand the neck<span class="d">◆</span></span><span>Build progressions<span class="d">◆</span></span><span>Solo anywhere<span class="d">◆</span></span><span>Back up any song<span class="d">◆</span></span>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section class="sec problem">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div>
+        <span class="eyebrow">02 / Why you're stuck</span>
+        <h2 class="display" style="margin-top:18px">It's not talent. Nobody gave you the foundation.</h2>
+      </div>
+      <div>
+        <p class="body">Most players memorize a few shapes and stay stuck in one key — lost the second the song moves somewhere new. That was me for two decades. The guy who "knows some chords" and never knew why any of it worked. The fix was never one more hour of practice. It's understanding how the fretboard actually works. That's the part I teach first, and that's the part almost nobody does.</p>
+        <p class="quote">"Learn it the right way once, and you never go back to guessing."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDATION -->
+<section class="sec foundation">
+  <div class="wrap">
+    <span class="eyebrow reveal">03 / What you'll actually learn</span>
+    <h2 class="display sec-head reveal" style="margin-top:14px">The foundation, in order.</h2>
+    <div class="reveal">
+      <div class="pillar"><div class="num">01</div><div><h3>The Fretboard Map</h3><p>Stop seeing random dots. See the whole neck as one connected map you actually understand.</p></div></div>
+      <div class="pillar"><div class="num">02</div><div><h3>Play in Any Key</h3><p>The framework that lets you move any shape, lick, or progression into any key — the thing that changed everything for me.</p></div></div>
+      <div class="pillar"><div class="num">03</div><div><h3>Build &amp; Choose Progressions</h3><p>Know which chords belong together and why, so you can write and follow progressions without guessing.</p></div></div>
+      <div class="pillar"><div class="num">04</div><div><h3>Rhythm &amp; Backup</h3><p>Become the player every band wants — lock in, hold it down, and make any song sound full.</p></div></div>
+      <div class="pillar"><div class="num">05</div><div><h3>Soloing</h3><p>Find the right notes anywhere on the neck and actually say something with them, in any key.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE -->
+<section class="sec course" id="course">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div>
+        <span class="eyebrow">The Course</span>
+        <h2 class="display">The Foundation. $50. Yours for life.</h2>
+        <p class="body">Everything I wish someone had handed me, in the exact order it should be learned. No filler. Watch it as many times as you want — you own it forever.</p>
+        <div class="price">$50<small>one payment</small></div>
+        <a class="btn btn-gold" data-cta="course" href="#">Get the Course — $50</a>
+        <p class="reassure">One payment. No subscription. Keep it forever.</p>
+        <div class="badges">
+          <span>6 video modules</span><span>Downloadable practice sheets</span><span>Lifetime access</span><span>Any style, any tuning</span>
+        </div>
+      </div>
+      <ul class="modules">
+        <li><span class="mn">01</span> How the fretboard really works</li>
+        <li><span class="mn">02</span> Playing in any key — the framework</li>
+        <li><span class="mn">03</span> Building &amp; choosing chord progressions</li>
+        <li><span class="mn">04</span> Rhythm, timing &amp; backup</li>
+        <li><span class="mn">05</span> Your first real solos</li>
+        <li class="plus"><span class="mn">+</span> Practice plans so you actually keep going</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- LESSONS -->
+<section class="sec lessons" id="lessons">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div>
+        <span class="eyebrow">Private Lessons</span>
+        <h2 class="display">Want me in your corner? Let's work.</h2>
+        <p class="body">Live video lessons built around exactly where you're stuck and where you want to go. I teach players at every level, on a schedule that works for you, anywhere, any time zone.</p>
+        <p class="detail">$60–80 / session · online · all levels · serious players only</p>
+        <a class="btn btn-gold" data-cta="book" href="#">Book a Lesson</a>
+        <p class="micro">First-timer? Grab a free 15-minute consult and we'll map your plan.</p>
+      </div>
+      <div class="photo">[ Photo · Jesse teaching ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- FR3TLAB -->
+<section class="sec tool" id="fr3tlab">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Free, no signup</span>
+      <h2 class="display">See it for yourself — Fr3tLab.</h2>
+      <p class="body">I built a free fretboard visualizer so you can see what I see. Pick a key, watch the map come to life, and you'll get exactly how I think about the guitar.</p>
+      <div class="frame"><iframe src="https://fr3tlab.com" title="Fr3tLab — free fretboard visualizer" loading="lazy"></iframe></div>
+      <a class="btn btn-ghost" href="https://fr3tlab.com" target="_blank" rel="noopener">Try Fr3tLab free →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="sec proof" id="proof">
+  <div class="wrap">
+    <span class="eyebrow reveal">07 / Proof</span>
+    <h2 class="display sec-head reveal" style="margin-top:14px">Watch first. Then decide.</h2>
+    <p class="sub reveal">Free lessons, breakdowns, and the foundation in action — straight from my channel.</p>
+    <div class="videos reveal" id="videos">
+      <a class="vid" data-cta="youtube" href="#"><span class="play"></span></a>
+      <a class="vid" data-cta="youtube" href="#"><span class="play"></span></a>
+      <a class="vid" data-cta="youtube" href="#"><span class="play"></span></a>
+    </div>
+    <div class="testis reveal">
+      <div class="testi"><p>"Finally get what I'm doing instead of memorizing."</p><div class="who">— Student name</div></div>
+      <div class="testi"><p>"Six months of lessons taught me less than one month with Jesse."</p><div class="who">— Student name</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL CAPTURE -->
+<section class="sec capture" id="start">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="display">Get the free any-key cheat sheet.</h2>
+      <p>The one-page foundation I wish I'd had, plus a short walkthrough on how to practice it. Drop your email, I'll send it now.</p>
+      <form data-cta="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="your@email.com" aria-label="Your email" required />
+        <button class="btn" type="submit">Send it to me</button>
+      </form>
+      <p class="micro">No spam. Just the good stuff.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="wrap reveal">
+    <h2 class="display">Don't wait 20 years.<br/><span class="gold">Start today.</span></h2>
+    <div class="cta-row" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px">
+      <a class="btn btn-gold" data-cta="course" href="#">Get the Course — $50</a>
+      <a class="btn btn-ghost" data-cta="book" href="#">Book a Lesson</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="#top"><span class="dot"></span>Jesse Moraga · Guitar</a>
+      <div class="flinks">
+        <a href="#course">The Course</a>
+        <a data-cta="book" href="#">Book a Lesson</a>
+        <a href="https://fr3tlab.com" target="_blank" rel="noopener">Fr3tLab</a>
+        <a data-cta="youtube" href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="socials" style="margin-top:24px">
+      <a data-cta="youtube" href="#">YouTube</a>
+      <a data-cta="tiktok" href="#">TikTok</a>
+      <a href="https://www.instagram.com/jessemusicusa" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:lessons@jessemoraga.com">lessons@jessemoraga.com</a>
+    </div>
+    <div class="fine">
+      <span>© Jesse Moraga · Guitar, taught from the real foundation.</span>
+      <a href="mailto:lessons@jessemoraga.com">lessons@jessemoraga.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ====== WIRE-IN POINTS — swap these 4 when the accounts are live ======
+     COURSE_URL     = Stripe Payment Link for the $50 course (https://buy.stripe.com/...)
+     BOOK_URL       = Calendly booking link (https://calendly.com/...)
+     YOUTUBE_URL    = exact YouTube channel/handle URL
+     TIKTOK_URL     = exact TikTok profile URL
+     Newsletter form = replace with the MailerLite embed form when ready.
+  ====================================================================== */
+  const LINKS = {
+    course:  "",   // TODO: Stripe Payment Link
+    book:    "",   // TODO: Calendly link
+    youtube: "",   // TODO: YouTube channel URL
+    tiktok:  "",   // TODO: TikTok profile URL
+  };
+  // Apply any links that are filled in; leave '#' (no-op) until provided.
+  document.querySelectorAll('[data-cta]').forEach(el=>{
+    const key = el.getAttribute('data-cta');
+    if(LINKS[key]){
+      el.setAttribute('href', LINKS[key]);
+      if(key!=='newsletter') el.setAttribute('target','_blank'), el.setAttribute('rel','noopener');
+    }
+  });
+
+  /* scroll reveals */
+  const io = new IntersectionObserver((ents)=>{
+    ents.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
