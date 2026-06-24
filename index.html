@@ -434,12 +434,29 @@
     }
   });
 
-  /* email cheat-sheet form — mailto fallback until MailerLite is wired */
+  /* Foundation guide signup — posts directly to MailerLite ("Guitar — Foundation Leads").
+     No backend/token needed: the public MailerLite form endpoint accepts the POST (verified). */
   const cf = document.getElementById('cheatForm');
   if(cf){ cf.addEventListener('submit', function(e){
     e.preventDefault();
-    const em = encodeURIComponent(document.getElementById('cheatEmail').value || '');
-    window.location.href = "mailto:lessons@jessemoraga.com?subject=Send%20me%20the%20free%20Foundation%20guide&body=My%20email%3A%20"+em;
+    const email = (document.getElementById('cheatEmail').value || '').trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return;
+    const btn = cf.querySelector('button');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    const body = new URLSearchParams();
+    body.append('fields[email]', email);
+    body.append('ml-submit', '1');
+    body.append('anticsrf', 'true');
+    fetch('https://assets.mailerlite.com/jsonp/2469090/forms/191196500168017656/subscribe', {
+      method: 'POST', mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString()
+    }).then(function(){
+      cf.innerHTML = "<p style=\"font-family:'Archivo',sans-serif;font-weight:700;font-size:1.25rem;color:#0A0A0B\">You're in — check your inbox to confirm, and the guide is on its way. 🤘</p>";
+    }).catch(function(){
+      btn.disabled = false; btn.textContent = 'Send it to me';
+      window.location.href = "mailto:lessons@jessemoraga.com?subject=Send%20me%20the%20free%20Foundation%20guide&body=My%20email%3A%20" + encodeURIComponent(email);
+    });
   }); }
 
   /* scroll reveals */
